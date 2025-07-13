@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "color-temperature-app-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare worker for Color Temperature Analyzer",
+  "main": "index.js",
+  "author": "Color Temperature Team",
+  "license": "MIT"
+} 
