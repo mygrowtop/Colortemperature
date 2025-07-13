@@ -1,0 +1,345 @@
+/* Page Specific Styles */
+
+/* Home Page */
+.hero-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #64748b;
+}
+
+/* Features Page */
+.feature-section {
+  margin-bottom: 5rem;
+}
+
+.advanced-features {
+  background-color: #f8fafc;
+  padding: 4rem 0;
+  margin: 4rem -2rem;
+}
+
+.advanced-features h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-comparison {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.comparison-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.comparison-item p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.cta-section {
+  text-align: center;
+  margin: 5rem 0;
+  padding: 4rem 2rem;
+  background-color: #f8fafc;
+  border-radius: 16px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #64748b;
+}
+
+/* How It Works Page */
+.process-section {
+  margin-bottom: 5rem;
+}
+
+.process-steps {
+  margin-top: 3rem;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  position: relative;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .process-step {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.step-number {
+  position: absolute;
+  top: -20px;
+  left: 2rem;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.step-image {
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.technology-section {
+  background-color: #f8fafc;
+  padding: 4rem 2rem;
+  margin: 0 -2rem 5rem;
+}
+
+.technology-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tech-details {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tech-item {
+  margin-bottom: 3rem;
+}
+
+.tech-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.tech-item p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.code-block {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.accuracy-section {
+  margin-bottom: 5rem;
+}
+
+.accuracy-list {
+  margin: 2rem 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.accuracy-list li {
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border-left: 4px solid var(--primary-color);
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* FAQ Page */
+.faq-categories {
+  margin: 4rem 0;
+}
+
+.faq-categories h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.category-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.category-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-card li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #64748b;
+}
+
+.category-card li:last-child {
+  border-bottom: none;
+}
+
+.still-have-questions {
+  text-align: center;
+  margin: 5rem 0;
+  padding: 3rem;
+  background-color: #f8fafc;
+  border-radius: 16px;
+}
+
+.still-have-questions h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.still-have-questions p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #64748b;
+}
+
+.question-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Contact Page */
+.faq-link-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.faq-link-container h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list li:before {
+  content: '•';
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Privacy Policy and Terms of Service Pages */
+.content-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .advanced-features {
+    padding: 3rem 1rem;
+    margin: 3rem -1rem;
+  }
+
+  .cta-section {
+    padding: 3rem 1rem;
+  }
+
+  .process-step {
+    padding: 1.5rem;
+  }
+
+  .technology-section {
+    padding: 3rem 1rem;
+    margin: 0 -1rem 3rem;
+  }
+
+  .still-have-questions {
+    padding: 2rem 1rem;
+  }
+} 
