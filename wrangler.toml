@@ -1,12 +1,15 @@
+# 构建配置
 [build]
 command = "npm install && npm run build"
-output_directory = "dist"
+output_dir = "dist"
 
-[site]
-bucket = "./dist"
-
+# 环境变量
 [build.environment]
 NODE_VERSION = "18"
+
+# Pages配置
+[site]
+bucket = "./dist"
 
 # 指定Pages输出目录
 pages_build_output_dir = "dist" 
