@@ -1,10 +1,15 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-// 网站URL
+// Get directory name in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Website URL
 const SITE_URL = 'https://colortemperature.com';
 
-// 页面路由和优先级配置
+// Page routes and priority configuration
 const pages = [
   { path: '/', changefreq: 'monthly', priority: '1.0' },
   { path: '/features', changefreq: 'monthly', priority: '0.8' },
@@ -15,20 +20,20 @@ const pages = [
   { path: '/terms-of-service', changefreq: 'yearly', priority: '0.4' }
 ];
 
-// 获取当前日期，格式为 YYYY-MM-DD
+// Get current date in YYYY-MM-DD format
 const getCurrentDate = () => {
   const date = new Date();
   return date.toISOString().split('T')[0];
 };
 
-// 生成sitemap.xml内容
+// Generate sitemap.xml content
 const generateSitemap = () => {
   const currentDate = getCurrentDate();
   
   let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
   sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   
-  // 为每个页面添加URL条目
+  // Add URL entry for each page
   pages.forEach(page => {
     sitemap += '  <url>\n';
     sitemap += `    <loc>${SITE_URL}${page.path}</loc>\n`;
@@ -43,7 +48,7 @@ const generateSitemap = () => {
   return sitemap;
 };
 
-// 将生成的sitemap写入文件
+// Write generated sitemap to file
 const writeSitemap = () => {
   const sitemap = generateSitemap();
   const outputPath = path.resolve(__dirname, '../public/sitemap.xml');
@@ -52,5 +57,5 @@ const writeSitemap = () => {
   console.log(`Sitemap generated at ${outputPath}`);
 };
 
-// 执行生成
+// Execute generation
 writeSitemap(); 

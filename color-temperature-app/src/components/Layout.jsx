@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { Helmet } from '@dr.pogodin/react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { organizationSchema, websiteSchema } from '../utils/structuredData';
 import cameraIcon from '../assets/camera-icon.svg';
 
