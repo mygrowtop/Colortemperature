@@ -1,4 +1,12 @@
 [build]
-command = "cd color-temperature-app && npm install && npm run build"
-output_directory = "color-temperature-app/dist"
-base_directory = "color-temperature-app" 
+command = "npm install && npm run build"
+output_directory = "dist"
+
+[site]
+bucket = "./dist"
+
+[build.environment]
+NODE_VERSION = "18"
+
+# 指定Pages输出目录
+pages_build_output_dir = "dist" 
